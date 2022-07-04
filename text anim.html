@@ -1,0 +1,58 @@
+<HTML>
+<head>
+<style>
+.container{
+background:yellow;
+width:200px;
+padding:50px;
+border-radius:10px;
+}
+
+.menu ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.menu ul li{
+padding:15px 50px;
+position:relative;
+overflow:hidden;
+}
+
+.menu ul li::before{
+content:"";
+position:absolute;
+height:4px;
+width:100px;
+background:red;
+bottom:0;
+transform:translatex(110px);
+opacity:0;
+transition:all 0.5s cubic-bezier(.5,0,.5,1);
+}
+
+.menu ul li:hover::before{
+transform:translatex(0px);
+opacity:1;
+width:20px;
+}
+</style>
+</body>
+</style>
+</head>
+<body>
+<div class="container">
+<div class="menu">
+<ul>
+<li>LOGIN</li>
+<li>SIGN UP</li>
+<li>ABOUT</li>
+<li>CONTACT</li>
+<li>HELP</li>
+</ul>
+</div>
+</div>
+
+</body>
+</HTML>
